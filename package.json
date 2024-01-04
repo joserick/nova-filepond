@@ -1,7 +1,12 @@
 {
     "private": true,
     "scripts": {
+        "dev": "npm run development",
+        "development": "mix",
         "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "npm run production",
         "production": "mix --production",
         "nova:install": "npm --prefix='../../vendor/laravel/nova' ci"
     },
@@ -19,6 +24,6 @@
         "sass": "^1.69.5",
         "sass-loader": "^13.3.2",
         "vue-filepond": "^7.0.4",
-        "vue-loader": "^17.3.1"
+        "vue-loader": "^16.8.3"
     }
 }
