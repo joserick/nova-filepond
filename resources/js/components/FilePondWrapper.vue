@@ -25,7 +25,6 @@
         :allow-video-preview="isPreviewEnabled"
         :allow-audio-preview="isPreviewEnabled"
         :credits="field.credits"
-        labelButtonDownloadItem="Télécharger"
         v-bind="field.labels"
         @updatefiles="onChange"
         @reorderfiles="onChange"
