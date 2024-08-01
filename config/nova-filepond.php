@@ -35,5 +35,6 @@ return [
         'buttonUndoItemProcessing' => 'Undo',
         'buttonRetryItemProcessing' => 'Retry',
         'buttonProcessItem' => 'Upload',
+        'buttonDownloadItem' => 'Download file',
     ],
 ];
