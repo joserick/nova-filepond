@@ -25,6 +25,7 @@
         :allow-video-preview="isPreviewEnabled"
         :allow-audio-preview="isPreviewEnabled"
         :credits="field.credits"
+        labelButtonDownloadItem="Télécharger"
         v-bind="field.labels"
         @updatefiles="onChange"
         @reorderfiles="onChange"
@@ -221,6 +222,14 @@ export default {
 
 .filepond--item {
     width: calc(var(--filepond-column) - .5em);
+}
+
+.filepond--download-icon {
+    background: rgba(var(--colors-primary-500));
+}
+
+.filepond--download-icon:hover {
+    background: rgba(var(--colors-primary-400));
 }
 
 </style>
