@@ -152,6 +152,14 @@ export default {
         background: rgba(var(--colors-gray-800));
     }
 
+    .filepond--download-icon {
+        background: rgba(var(--colors-primary-500));
+    }
+
+    .filepond--download-icon:hover {
+        background: rgba(var(--colors-primary-400));
+    }
+
 }
 
 [data-filepond-item-state*='error'] .filepond--item-panel,
@@ -221,14 +229,6 @@ export default {
 
 .filepond--item {
     width: calc(var(--filepond-column) - .5em);
-}
-
-.filepond--download-icon {
-    background: rgba(var(--colors-primary-500));
-}
-
-.filepond--download-icon:hover {
-    background: rgba(var(--colors-primary-400));
 }
 
 </style>
