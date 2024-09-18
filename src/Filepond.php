@@ -155,6 +155,7 @@ class Filepond extends File
                     });
 
                     if ($this->multiple) {
+                        $model->{$attribute} = array_merge($model->{$attribute}, [$index => $data]);
                         $attribute = sprintf('%s->%s', $attribute, $index);
                     }
 
@@ -192,6 +193,7 @@ class Filepond extends File
                         $data = $data[ $attribute ];
                     }
 
+                    $model->{$attribute} = array_merge($model->{$attribute}, [$index => $data]);
                     $model->{$modelAttribute} = $data;
 
                 } else {
